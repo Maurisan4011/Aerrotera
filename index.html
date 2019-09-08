@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Proyecto Aeroterra</title>
+
+</head>
+<body>
+    <!-- Inicio de formulario -->
+    <form action="" class="formulario"> 
+
+        <h1 class="formulario-titulo">Aeroterra</h1>
+
+        <input type="text" class="formulario-input" required>
+        <!-- Generamos un campo de datos -->
+        <label for="" id="nombre" class="formulario-label">Nombre</label>
+        <!-- Generamos una etiqueta -->
+
+        <!-- Inicio del formulario -->
+        <input type="text" class="formulario-input" required>
+        <label for="" id="direccion" class="formulario-label">Dirección</label>
+
+        <input type="text" class="formulario-input" required>
+        <label for="" id="telefono"class="formulario-label">Teléfono</label>
+
+        <!-- Inicio menú desplegable -->
+        <span type="text" id="categoria" class="formulario-categoría" required>Categoría
+        <select name="">
+            <option class="formulario-Subcategoría">Comercial</option>
+            <option class="formulario-Subcategoría">Redencial</option>
+            <option class="formulario-Subcategoría">Mixta</option>
+        </select>
+        </span>
+        <!-- Final menú desplegable -->
+
+        <input type="text" class="formulario-input" required>
+        <label for="" id="coordenadas" class="formulario-label">Coord.</label>
+
+        <input type="submit" value="Enviar" class="formulario-enviar">
+        <input type="reset" value="Borrar" class="formulario-borrar"> 
+        <!-- Fin del formulario -->
+
+    </form> 
+    <!-- Fin de formulario -->
+
+    <div id="map"></div>
+
+    <script src="validar.js"></script>
+    <script src="maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCorRnaOruc2waxYMQDbC1lC_9N-QsE6p4&callback=mapaInicio"
+    async defer></script>
+
+</body>
+</html>
